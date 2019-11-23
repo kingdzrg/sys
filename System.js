@@ -1071,25 +1071,25 @@ client.on('message', message => {
      if (message.content === "-help") {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
-.addField('     **$clear** ' ,' **مسح الشات** ')
-.addField('     **$bc**  ' ,' **نشر رساله للأعضاء** ')
-.addField('     **$server**  ' ,' **معلومات السرفر** ')
-.addField('     **$id**  ' ,' **لعرض معلوماتك** ')
-.addField('     **$avatar**  ' ,' **لعرض صورة البروفايل خاصتك** ')
-.addField('     **$mute**  ' ,' **لإعطاء شخص ميوت** ')
-.addField('     **$unmute**  ' ,' **لفك من شخص ميوت** ')
-.addField('     **$ban**  ' ,' **حتى تبند ** ')
-.addField('     **$unban **  ' ,' **لفك الباند عن شخص** ')
-.addField('     **$bans **  ' ,' **لمعرفة كم شخص مبند في السيرفر** ')
-.addField('     **$mc **  ' ,' **لتقفيل الروم** ')
-.addField('     **$umc **  ' ,' **لفتح الروم** ')
-.addField('     **$cc **  ' ,' **لصنع رتب الوان** ')
-.addField('     **$dc **  ' ,' **لحذف رتب الألوان** ')
-.addField('     **$ping **  ' ,' **لمعرفة سرعة اتصال البوت** ')
-.addField('     **$hide **  ' ,' **لاخفاء الروم** ')
-.addField('     **$show **  ' ,' **لأضهار الروم** ')
-.addField('     **$mutevoice **  ' ,' **لأسكات شخص في الروم** ')
-.addField('     **$unmutevoice **  ' ,' **لفك الأسكات عن شخص في الروم** ')
+.addField('     **-clear** ' ,' **مسح الشات** ')
+.addField('     **-bc**  ' ,' **نشر رساله للأعضاء** ')
+.addField('     **-server**  ' ,' **معلومات السرفر** ')
+.addField('     **-id**  ' ,' **لعرض معلوماتك** ')
+.addField('     **-avatar**  ' ,' **لعرض صورة البروفايل خاصتك** ')
+.addField('     **-mute**  ' ,' **لإعطاء شخص ميوت** ')
+.addField('     **-unmute**  ' ,' **لفك من شخص ميوت** ')
+.addField('     **-ban**  ' ,' **حتى تبند ** ')
+.addField('     **-unban **  ' ,' **لفك الباند عن شخص** ')
+.addField('     **-bans **  ' ,' **لمعرفة كم شخص مبند في السيرفر** ')
+.addField('     **-mc **  ' ,' **لتقفيل الروم** ')
+.addField('     **-umc **  ' ,' **لفتح الروم** ')
+.addField('     **-cc **  ' ,' **لصنع رتب الوان** ')
+.addField('     **-dc **  ' ,' **لحذف رتب الألوان** ')
+.addField('     **-ping **  ' ,' **لمعرفة سرعة اتصال البوت** ')
+.addField('     **-hide **  ' ,' **لاخفاء الروم** ')
+.addField('     **-show **  ' ,' **لأضهار الروم** ')
+.addField('     **-mutevoice **  ' ,' **لأسكات شخص في الروم** ')
+.addField('     **-unmutevoice **  ' ,' **لفك الأسكات عن شخص في الروم** ')
 
 .setColor('RANDOM')
   message.channel.sendEmbed(embed);
@@ -1127,7 +1127,7 @@ client.on('message',async message => {
   
   
 client.on('message', message => {
-        var prefix = "$";
+        var prefix = "-";
         if(message.content.startsWith(prefix + 'deafen')) {
       if (message.mentions.users.size === 0 && message.mentions.roles.size === 0) {
         return message.reply('**يجب عليك المنشن اولاّ**❌').catch(console.error);
@@ -1375,7 +1375,7 @@ client.on('guildMemberAdd', member => {
     .addField('•🕣|Time Create » مدة انشاء حسابك', member.user.createdAt.toLocaleString(), true)
  
                                        
-     .setFooter("Eight Server")
+     .setFooter("ToP Server")
         .setTimestamp()
    
       channel.sendEmbed(embed);
@@ -1397,9 +1397,9 @@ client.on('guildMemberAdd', member => {
     two = second[Math.floor(Math.random() * second.length) + 0];
     three = third[Math.floor(Math.random() * third.length) + 0];
     if(one === two && two === three) {
-      aa = "لقد فزت :hearts:";
+      aa = "لقد فزت :heart: ";
     } else {
-      aa = "لقد خسرت :broken_heart:";
+      aa = "لقد خسرت :broken_heart: ";
     }
 
     message.channel.send(`**${one} | ${two} | ${three}**\n\n\`${aa}\`\n${message.author}`);
@@ -1525,7 +1525,7 @@ client.on('guildMemberAdd', member => {
 }); 
 
 client.on('message', msg => {
-        if (msg.content.startsWith(`$warn`)) {
+        if (msg.content.startsWith(`-warn`)) {
            let args = msg.content.split(" ").slice(1);
           if (!msg.mentions.members.first()) return msg.reply('منشن الشخص المحدد')
           if (!args[1]) return msg.reply('``اكتب السبب``')
