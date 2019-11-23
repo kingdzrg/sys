@@ -14,6 +14,10 @@ client.on('ready', () => {
    console.log(`----------------`);
 });
 
+client.on('guildMemberAdd', member=> {
+    member.addRole(member.guild.roles.find("name","・ToP"));
+    });
+
 client.on('message', message => {
     if(message.channel.type === "dm") return;
       if(message.content.startsWith ("-زواج")) {
