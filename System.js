@@ -265,7 +265,7 @@ client.on('ready', () => {
 client.on('guildMemberAdd', member=> {
     member.addRole(member.guild.roles.find("name",""));
     });
-const devs = ["536998852964646913"];
+const devs = ["537675177677291530"];
 const adminprefix = ["-"];
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
