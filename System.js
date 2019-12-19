@@ -16,7 +16,7 @@ client.on('ready', () => {
 
 var prefix = "1"; 
 client.on('ready', () => { console.log(`Logged in as ${client.user.tag}!`); }); client.on('ready', async() 
-=> { var server = "515320354454110218"; // ايدي السررفر var channel = "515481411583475713";//ايدي الروم 
+=> { var server = "538407182736031744"; // ايدي السررفر var channel = "654037512838184974";//ايدي الروم 
 setInterval(()=>{ client.guilds.get(server).channels.get(channel).send('**Dream , Dream , Dream , Dream , 
 Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , 
 Dream , **') },305); }) client.on('message', message => { if (message.author.bot) return; if 
